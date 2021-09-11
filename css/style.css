@@ -35,6 +35,8 @@ header{
 
     padding: 20px 30px;
 
+    transition: all 0.7s;
+
 }
 
 .navmenus{
@@ -134,7 +136,7 @@ transform: rotate(-45deg) translate(-5px,6px );
 
 /* Start Mission Section */
 .missions{
-    background: #12393d;
+    background: #031c2b;
 }
 
 .underlines{
@@ -142,14 +144,100 @@ transform: rotate(-45deg) translate(-5px,6px );
     border: 3px solid #eee;
     margin: auto;
 }
+
+
+.fromlefts{
+    animation-name: myanifromleft;
+    animation-duration: 3s;
+}
+
+.fromrights{
+    animation-name: myanifromright;
+    animation-duration: 3s;
+}
+
+@keyframes myanifromleft {
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes myanifromright {
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* End Mission Section */
 
 
+/* Start Collection */
+.card{
+    position: relative;
+}
+
+.cardshadows{
+    box-shadow: 5px 8px 20px #444;
+}
+
+.headings{
+    width: 70%;
+    background: #222;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 70%;
+    right: 0;
+
+    opacity: 0.7;
+
+    transition: all 0.5s;
+}
+
+
+.headings:hover{
+    opacity: 1;
+}
+/* End Collection */
 
 
 
 
+/* Start Gallery Section */
+.darkunderlines{
+    width: 150px;
+    border: 3px solid #aaa;
+    margin: auto;
+}
 
+
+.gallerylists{
+    color: #777;
+    cursor: pointer;
+}
+
+
+.gallerylists.activeitems{
+    color: #68deed;
+}
+/* End Gallery Section */
 
 
 
