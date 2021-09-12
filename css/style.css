@@ -242,9 +242,11 @@ transform: rotate(-45deg) translate(-5px,6px );
 
 
 
-
-
-
+/* Start Customers Section */
+.customers{
+    background: #17111f;
+}
+/* End Customers Section */
 
 
 
