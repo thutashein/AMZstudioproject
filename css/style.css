@@ -253,6 +253,227 @@ transform: rotate(-45deg) translate(-5px,6px );
 
 
 
+/* Start Pricing Section */
+.cardones,.cardtwos,.cardthrees{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url(../assets/img/etc/camerabg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: 7px 18px 50px #555;
+}
+
+
+.carditems{
+    width: 55%;
+    border-bottom: 1px solid #eee;
+    margin: auto;
+}
+
+.cardbuttons{
+    width: 130px;
+    background: tomato;
+    border-radius: 25px;
+    box-shadow: 5px 8px 20px rgba(0,0,0,0.5);
+}
+
+
+.cardbuttons:hover{
+    background: #eb5a3d;
+    transform: translateY(-2px);
+   
+}
+
+
+.cardones.movefromlefts{
+    animation: movefromlefts 2s ease-in-out;
+}
+
+@keyframes movefromlefts {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.cardtwos.movefrombottoms{
+    animation: movefrombottoms 2s ease-in-out;
+}
+
+@keyframes movefrombottoms {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.cardthrees.movefromrights{
+    animation: movefromrights 2s ease-in-out;
+}
+
+
+@keyframes movefromrights {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* End Pricing Section */
+
+
+
+
+
+/* Start Contact Section */
+.contacts{
+    background-image:linear-gradient(
+
+    105deg,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.9) 50%,
+    transparent 50%
+
+    ) , url(../assets/img/etc/lady.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.inputs{
+    background:transparent;
+    color: #fff;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+
+    /* bootstrap style */
+    border-radius:0;
+}
+
+.inputs:focus{
+    background:transparent;
+    border-color: transparent;
+    border-bottom: 2px solid tomato;
+    color: #fff;
+
+    /* Boostrap of form-control = bootstrap style */
+    box-shadow: none;
+}
+
+
+.submitbuttons{
+    background: tomato;
+    color: #eee;
+
+    transition: all 0.3s;
+}
+
+.submitbuttons:hover{
+    background: #eb5a3d;
+    transform: translateY(-3px);
+}
+
+
+.labels{
+    display: block;
+    font-size: 15px;
+    color: #999;
+    margin-left: 4px;
+    margin-top: -60px; 
+    
+    transition: all 0.3s;
+}
+
+
+
+/* New Property */
+.inputs:placeholder-shown + .labels{
+    /* opacity: 0; */
+    visibility: hidden;
+    transform: translate(20px,20px);
+}
+/* End Contact Section */
+
+
+
+
+
+
+/* Start Footer */
+.footerlinks{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+
+    transition: all 0.5s;
+}
+
+.footerlinks:hover{
+    color:#0cf2fa;
+}
+/* End Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
